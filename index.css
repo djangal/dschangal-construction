@@ -177,8 +177,8 @@ body, html {
 @media only screen and ( min-width: 768px) {
     .sign  {        
         margin-bottom: 40px;  
-        min-width: 430px;
-        min-height: 440px;
+        min-width: max(350px, min(60vw, 60vh));
+        min-height: max(350px, min(60vw, 60vh));
         width: 40vh;
         height: 40vh;
 
@@ -197,5 +197,11 @@ body, html {
 @media only screen and ( min-width: 1024px) { 
     .eule {
         margin-left: 20vw;
+    }
+
+    .sign  {          
+        min-width: 430px;
+        min-height: 430px;
+
     }
 }
