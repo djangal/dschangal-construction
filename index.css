@@ -52,29 +52,6 @@ body, html {
 }
 
 
-@media only screen and ( min-width: 768px) {
-    .sign  {        
-        margin-bottom: 20px;  
-        min-width: 340px;
-        min-height: 340px;
-        width: 40vh;
-        height: 40vh;
-
-    }
-
-    .eule {
-        margin-left: 12vw;
-    }
-} 
-
-
-@media only screen and ( min-width: 1024px) { 
-    .eule {
-        margin-left: 20vw;
-        transition: all 0.1s ease;
-    }
-}
-
 .eule {
     width: auto;
 }
@@ -85,15 +62,17 @@ body, html {
     background-size: cover;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
 }
 .sign-bg {
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-    
+    background-color: rgba(250, 235, 215, 0.3);
+    backdrop-filter: sepia(90%) brightness(1.1) contrast(0.5);
+
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    margin: 40px;
     position: absolute;
-    box-shadow: inset 0px 20px 40px 30px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 15px 10px rgba(0,0,0,0.4),
+    0 0 40px 60px rgba(0,0,0,0.3);
     z-index: -1;
 }
 .sign-bg-wrapper  { 
@@ -106,7 +85,10 @@ body, html {
     
 }
 .sign-content {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 .eule {
     position: absolute;
@@ -121,7 +103,7 @@ body, html {
     text-transform: capitalize;
     font-size: 1.5em;
     font-weight: lighter;
-    color: red;
+    color: rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 
@@ -131,21 +113,74 @@ body, html {
 
 .email {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid lightgray;
-    box-shadow: 0 0 15px 0px rgba(0,0,0,0.1);
-    padding: 8px;
-    /* padding-left: 12px; */
-    background: white;
+    padding: 4px;
+    height: 140px;
+    width: 140px;
+    /* background: rgba(255,255,255, 0.2); */
     color: black;
-    border-radius: 20px;
-
+    /* border-radius: 20px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* fill: rgba(0, 0, 0, 0.5); */
+    fill: rgba(0, 88, 0, 0.6);
+}
+.email:hover {
+    transform: scale(1.1);
+    fill: rgba(0, 128, 0, 0.6);
+    color: rgba(0,100,0, 1);
+    text-shadow: 0 0 40px rgba(255,255,255, 0.8);
+}
+.email svg {
+    box-shadow: 0 0 15px 0px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.6);
+    height: 40px;
+    margin-top: 4px;
+    /* width: 50px; */
+    /* top: 0px; */
+    /* position: absolute; */
+/* z-index: -1; */
+    /* margin-right: 8px; */
+    opacity: 1;
+    /* max-height: 1.5rem; */
 }
 
-.email svg {
-    height: 100%;
-    margin-right: 8px;
-    opacity: 0.6;
-    max-height: 1.5rem;
+.email:hover svg {
+    background: rgba(255,255,255,0.5);
+    /* opacity: 0.3; */
+}
+
+
+
+@media only screen and ( min-width: 768px) {
+    .sign  {        
+        margin-bottom: 20px;  
+        min-width: 430px;
+        min-height: 440px;
+        width: 40vh;
+        height: 40vh;
+
+    }
+    
+    .sign-bg {
+        background-color: rgba(250, 235, 215, 0.7);
+    }
+
+    .eule {
+        margin-left: 12vw;
+    }
+} 
+
+
+@media only screen and ( min-width: 1024px) { 
+    .eule {
+        margin-left: 20vw;
+        transition: all 0.1s ease;
+    }
 }
