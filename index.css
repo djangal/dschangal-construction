@@ -114,9 +114,9 @@ body, html {
 
 .email {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
     padding: 4px;
     height: 140px;
     width: 140px;
@@ -138,6 +138,12 @@ body, html {
     text-shadow: 0 0 40px rgba(255,255,255, 0.8);
     -webkit-text-shadow: 0 0 40px rgba(255,255,255, 0.8);
 }
+.email svg, .email img {
+    height: 40px;
+    margin-top: 4px;
+    opacity: 1;
+}
+
 .email svg {
     box-shadow: 0 0 15px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0 0 15px 0px rgba(0,0,0,0.5);
