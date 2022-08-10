@@ -30,7 +30,7 @@ body, html {
     overflow: auto;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: column;
 }
 .sign {
@@ -100,7 +100,8 @@ body, html {
     position: absolute;
     left: 0;
     max-height: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
 .under-construction {
