@@ -75,8 +75,8 @@ body, html {
     margin-top: 0;
     margin-bottom: 0;
     position: absolute;
-    box-shadow: inset 0px 30px 15px 10px rgba(0,0,0,0.4), 0 0 0px 60px rgba(0,0,0,0.3);
-    -webkit-box-shadow: inset 0px 30px 15px 10px rgba(0,0,0,0.4), 0 0 40px 60px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 40px 15px 10px rgba(0,0,0,0.4), 0 0 40px 20px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0px 40px 15px 10px rgba(0,0,0,0.4), 0 0 40px 20px rgba(0,0,0,0.3);
     z-index: -1;
 }
 .sign-bg-wrapper  { 
