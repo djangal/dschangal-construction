@@ -66,6 +66,7 @@ body, html {
 .sign-bg {
     background-color: rgba(250, 235, 215, 0.3);
     backdrop-filter: sepia(90%) brightness(1.1) contrast(0.5);
+    --webkit-backdrop-filter: sepia(90%) brightness(1.1) contrast(0.5);
 
     width: calc(100% - 80px);
     height: calc(100% - 80px);
@@ -139,6 +140,7 @@ body, html {
 .email svg {
     box-shadow: 0 0 15px 0px rgba(0,0,0,0.5);
     backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
     background: rgba(255,255,255,0.6);
     height: 40px;
     margin-top: 4px;
